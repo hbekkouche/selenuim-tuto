@@ -11,13 +11,13 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 class SeleniumTest {
 
     @Test
-    void projectIsConfigured(ChromeDriver driver) {
+    void chromeTest(ChromeDriver driver) {
         driver.get("https://www.google.com");
         Assertions.assertTrue(driver.getTitle().contains("Google"));
     }
 
     @Test
-    void projectIsConfigured(FirefoxDriver driver) {
+    void firefoxTest(FirefoxDriver driver) {
         driver.get("https://www.google.com");
         Assertions.assertTrue(driver.getTitle().contains("Google"));
     }
